@@ -1,0 +1,354 @@
+@mainColor: #ff6700;
+
+body {
+  background-color: #f4f4f4;
+}
+a {
+  text-decoration: none;// 去掉下划线
+  /* inherit 继承 */
+  color: inherit;
+  font: inherit;
+}
+
+#total-title {
+  line-height: 40px;
+  a:hover {
+    text-decoration: none;
+    color: @mainColor;
+  }
+}
+
+/*主内容*/
+#contents {
+  margin-bottom: 100px;
+  .container {
+    // 轮播图
+    .banner {
+      height: 250px;
+      overflow: hidden;
+      position: relative;
+      ul {
+        li {
+          position: absolute;
+          top: 0;
+          left: 100%;
+        }
+        li:first-child {
+          left: 0;
+        }
+      }
+      ol {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        li {
+          float: left;
+          width: 10px;
+          height: 10px;
+          margin: 4px;
+          border-radius: 50%;
+          border: 1px solid #a1a1a1;
+          background: rgba(0, 0, 0, .6);
+        }
+        .active {
+          background: #fff;
+        }
+      }
+
+    }
+    // 自助服务， 产品支持 服务中心 常见问题 联系客服
+    .self-service,
+    .pro-support ,
+    .service-center ,
+    .commom-ques ,
+    .contact-ours {
+      h2 {
+        display: block;
+        font-size: 30px;
+        margin-top: 30px;
+        color: #666;
+        text-align: center;
+        font-weight: 400;
+        line-height: 106px;
+      }
+      .questions ,
+      .products ,
+      .contact {
+        ul {
+          li {
+            float: left;
+            width: 296px;
+            height: 277px;
+            background: #fff url(../img/selfservice_icon_01.png) no-repeat -13px -15px;
+            margin: 0 14px 18px 0;
+            transition: all .3s;
+            a {
+              display: block;
+              height: 277px;
+              text-align: center;
+              text-decoration: none;
+              img {
+                margin-top: 76px;
+              }
+              h3 {
+                font-size: 18px;
+                font-weight: 700;
+                color: #000;
+                line-height: 46px;
+              }
+              span {
+                display: block;
+                font-size: 14px;
+                line-height: 14px;
+              }
+            }
+            a:hover {
+              h3 , span {
+                color: @mainColor;
+              }
+            }
+          }
+          li:hover {
+            transform: translateY(-6px);
+            box-shadow: 0px 0 16px 2px #b9b9b9;
+          }
+          li:nth-child(2) {
+            background-image: url(../img/selfservice_icon_02.png);
+          }
+          li:nth-child(3) {
+            background-image: url(../img/selfservice_icon_03.png);
+          }
+          li:nth-child(4) {
+            margin: 0 0 18px 0;
+            background-image: url(../img/selfservice_icon_04.png);
+          }
+          li:nth-child(5) {
+            background-image: url(../img/selfservice_icon_05.png);
+          }
+          li:nth-child(6) {
+            background-image: url(../img/selfservice_icon_06.png);
+          }
+          li:nth-child(7) {
+            background-image: url(../img/selfservice_icon_07.png);
+          }
+          li:nth-child(8) {
+            margin: 0 0 18px 0;
+            background-image: url(../img/selfservice_icon_08.png);
+          }
+        }
+      }
+    }
+    .pro-support {
+      .products {
+        ul {
+          li:nth-child(n) {
+            height: 287px;
+            background-image: none;
+            a {
+              img {
+                margin: 45px 0 13px 0;
+              }
+              span {
+                font-size: 16px;
+                line-height: 28px;
+              }
+
+            }
+          }
+        }
+      }
+    }
+    .service-center {
+      .center {
+        height: 300px;
+        .left, .right {
+          float: left;
+          width: 613px;
+          height: 100%;
+          overflow: hidden;
+        }
+        .left {
+          img {
+            width: 100%;
+          }
+        }
+        .right {
+          background-color: #fff;
+          text-align: center;
+          color: #000;
+          p {
+            font-size: 20px;
+            margin: 64px auto 15px;
+          }
+          span {
+            font-size: 16px;
+            opacity: .6;
+          }
+          .icon {
+            width: 500px;
+            margin: 24px auto 10px;
+            opacity: .4;
+            dl {
+              float: left;
+              width: 20%;
+            }
+          }
+          a {
+            display: inline-block;
+            font-size: 16px;
+            margin: 15px auto;
+            width: 158px;
+            height: 38px;
+            line-height: 38px;
+            text-decoration: none;
+            transition: all .2s;
+            color: rgba(0,0,0,.4);
+          }
+          a:hover {
+            color: @mainColor;
+          }
+        }
+      }
+    }
+    .commom-ques {
+      .search {
+        position: relative;
+        width: 646px;
+        height: 50px;
+        margin: 0 auto 50px;
+        background-color: #fff;
+        .search-content {
+          width: 567px;
+          height: 48px;
+          border: none;
+          padding: 0 52px 0 27px;
+          color: #000;
+        }
+        .search-btn {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 52px;
+          height: 50px;
+          line-height: 50px;
+          font-size: 18px;
+          text-align: center;
+          transition: all .2s;
+        }
+        .search-btn:hover {
+          color: #fff;
+          background: @mainColor;
+        }
+        p {
+          font-size: 12px;
+          color: @mainColor;
+          margin-top: 10px;
+          display: none;
+        }
+      }
+      .content {
+        background-color: #fff;
+        .tab-list {
+          font-weight: 400;
+          li {
+            float: left;
+            width: 1 / 7 *100%;
+            height: 66px;
+            font-size: 18px;
+            line-height: 66px;
+            color: #333;
+            text-align: center;
+            border-bottom: 1px solid #f5f5f5;
+          }
+          li.active {
+            color: #fff;
+            background-color: @mainColor;
+          }
+        }
+        .tab-content {
+          .per {
+            padding: 30px 0 16px 0;
+            text-align: center;
+            ul > li {
+              float: left;
+              width: 44%;
+              margin-left: 6%;
+              font-size: 20px;
+              line-height: 40px;
+              text-align: left;
+              /*list-style: disc;*/
+              color: #e2e2e2;
+              a {
+                display: inline-block;
+                width: 100%;
+                color: #000;
+                opacity: .87;
+                font-size: 16px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+              }
+              &:hover {
+                color: @mainColor;
+                a {
+                  color: @mainColor;
+                  text-decoration: none;
+                }
+              }
+            }
+            > a {
+              display: block;
+              color: #000;
+              opacity: .6;
+              font-size: 16px;
+            }
+            > a:hover {
+              text-decoration: none;
+              color: @mainColor;
+            }
+          }
+        }
+      }
+    }
+    .contact-ours {
+      .contact {
+        ul {
+          width: 1246px;
+          li:nth-child(n) {
+            background-image: none;
+            margin: 0 14px 17px 0;
+            padding: 0;
+            height: 276px;
+            a {
+              .content {
+                margin: 0;
+                padding-top: 116px;
+                text-align: center;
+                img , span {
+                  display: inline-block;
+                  margin: 0;
+                }
+                span {
+                  font-size: 18px;
+                  line-height: 18px;
+                  margin-left: 20px;
+                  color: #000;
+                  opacity: .87;
+                  position: relative;
+                }
+                span.two-line {
+                  line-height: 24px;
+                  top: 16px;
+                }
+              }
+            }
+
+          }
+        }
+
+      }
+    }
+
+  }
+}

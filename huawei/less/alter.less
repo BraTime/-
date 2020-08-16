@@ -1,0 +1,171 @@
+@charset "utf-8";
+/*bootstrap更改属性*/
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/*@media (min-width: 1500px) {
+  .container {
+    width: 97%;
+    padding-left: 60px;
+    padding-right: 690px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1800px;
+  }
+}*/
+
+/*頂部*/
+.tab-content  .tab-pane {
+  display: none;
+}
+.tab-content  .active {
+  display: block;
+}
+
+/*头部导航栏*/
+.navbar-hw {
+  background-color: #ffffff;
+  border-bottom: 2px solid #ccc;
+}
+.navbar-hw .navbar-brand {
+  color: #777;
+}
+.navbar-hw .navbar-brand:hover,
+.navbar-hw .navbar-brand:focus {
+  background-color: transparent;
+}
+.navbar-hw .navbar-text {
+  color: #777;
+}
+.navbar-hw .navbar-nav > li > a {
+  color: #777;
+}
+.navbar-hw .navbar-nav > li > a:hover,
+.navbar-hw .navbar-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom: 2px solid #e40012;
+}
+.navbar-hw .navbar-nav > .active > a,
+.navbar-hw .navbar-nav > .active > a:hover,
+.navbar-hw .navbar-nav > .active > a:focus {
+  background-color: #ffffff;
+}
+.navbar-hw .navbar-nav > .disabled > a,
+.navbar-hw .navbar-nav > .disabled > a:hover,
+.navbar-hw .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: #fff;
+}
+.navbar-hw .navbar-toggle {
+  border-color: #ddd;
+}
+.navbar-hw .navbar-toggle:hover,
+.navbar-hw .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.navbar-hw .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.navbar-hw .navbar-collapse,
+.navbar-hw .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-hw .navbar-nav > .open > a,
+.navbar-hw .navbar-nav > .open > a:hover,
+.navbar-hw .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+  .navbar-hw .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .navbar-hw .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-hw .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .navbar-hw .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-hw .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-hw .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  .navbar-hw .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-hw .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-hw .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.navbar-hw .navbar-link {
+  color: #777;
+}
+.navbar-hw .navbar-link:hover {
+  color: #333;
+}
+.navbar-hw .btn-link {
+  color: #777;
+}
+.navbar-hw .btn-link:hover,
+.navbar-hw .btn-link:focus {
+  color: #333;
+}
+.navbar-hw .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-hw .btn-link:hover,
+.navbar-hw .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-hw .btn-link:focus {
+  color: #ccc;
+}
+
+/*新闻与活动块*/
+#news {
+  .thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 0;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+  }
+  .thumbnail > img,
+  .thumbnail a > img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  a.thumbnail:hover,
+  a.thumbnail:focus,
+  a.thumbnail.active {
+    text-decoration: none;
+    .caption {
+      background: #f3f3f3;
+    }
+  }
+  .thumbnail .caption {
+    color: #333;
+    max-width: 100%;
+  }
+  .thumbnail > img,
+  .thumbnail a > img,
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}

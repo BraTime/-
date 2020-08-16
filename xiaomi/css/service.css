@@ -1,0 +1,520 @@
+body {
+  background-color: #f4f4f4;
+}
+a {
+  text-decoration: none;
+  /* inherit 继承 */
+  color: inherit;
+  font: inherit;
+}
+#total-title {
+  line-height: 40px;
+}
+#total-title a:hover {
+  text-decoration: none;
+  color: #ff6700;
+}
+/*主内容*/
+#contents {
+  margin-bottom: 100px;
+}
+#contents .container .banner {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+#contents .container .banner ul li {
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+#contents .container .banner ul li:first-child {
+  left: 0;
+}
+#contents .container .banner ol {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#contents .container .banner ol li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin: 4px;
+  border-radius: 50%;
+  border: 1px solid #a1a1a1;
+  background: rgba(0, 0, 0, 0.6);
+}
+#contents .container .banner ol .active {
+  background: #fff;
+}
+#contents .container .self-service h2,
+#contents .container .pro-support h2,
+#contents .container .service-center h2,
+#contents .container .commom-ques h2,
+#contents .container .contact-ours h2 {
+  display: block;
+  font-size: 30px;
+  margin-top: 30px;
+  color: #666;
+  text-align: center;
+  font-weight: 400;
+  line-height: 106px;
+}
+#contents .container .self-service .questions ul li,
+#contents .container .pro-support .questions ul li,
+#contents .container .service-center .questions ul li,
+#contents .container .commom-ques .questions ul li,
+#contents .container .contact-ours .questions ul li,
+#contents .container .self-service .products ul li,
+#contents .container .pro-support .products ul li,
+#contents .container .service-center .products ul li,
+#contents .container .commom-ques .products ul li,
+#contents .container .contact-ours .products ul li,
+#contents .container .self-service .contact ul li,
+#contents .container .pro-support .contact ul li,
+#contents .container .service-center .contact ul li,
+#contents .container .commom-ques .contact ul li,
+#contents .container .contact-ours .contact ul li {
+  float: left;
+  width: 296px;
+  height: 277px;
+  background: #fff url(../img/selfservice_icon_01.png) no-repeat -13px -15px;
+  margin: 0 14px 18px 0;
+  transition: all 0.3s;
+}
+#contents .container .self-service .questions ul li a,
+#contents .container .pro-support .questions ul li a,
+#contents .container .service-center .questions ul li a,
+#contents .container .commom-ques .questions ul li a,
+#contents .container .contact-ours .questions ul li a,
+#contents .container .self-service .products ul li a,
+#contents .container .pro-support .products ul li a,
+#contents .container .service-center .products ul li a,
+#contents .container .commom-ques .products ul li a,
+#contents .container .contact-ours .products ul li a,
+#contents .container .self-service .contact ul li a,
+#contents .container .pro-support .contact ul li a,
+#contents .container .service-center .contact ul li a,
+#contents .container .commom-ques .contact ul li a,
+#contents .container .contact-ours .contact ul li a {
+  display: block;
+  height: 277px;
+  text-align: center;
+  text-decoration: none;
+}
+#contents .container .self-service .questions ul li a img,
+#contents .container .pro-support .questions ul li a img,
+#contents .container .service-center .questions ul li a img,
+#contents .container .commom-ques .questions ul li a img,
+#contents .container .contact-ours .questions ul li a img,
+#contents .container .self-service .products ul li a img,
+#contents .container .pro-support .products ul li a img,
+#contents .container .service-center .products ul li a img,
+#contents .container .commom-ques .products ul li a img,
+#contents .container .contact-ours .products ul li a img,
+#contents .container .self-service .contact ul li a img,
+#contents .container .pro-support .contact ul li a img,
+#contents .container .service-center .contact ul li a img,
+#contents .container .commom-ques .contact ul li a img,
+#contents .container .contact-ours .contact ul li a img {
+  margin-top: 76px;
+}
+#contents .container .self-service .questions ul li a h3,
+#contents .container .pro-support .questions ul li a h3,
+#contents .container .service-center .questions ul li a h3,
+#contents .container .commom-ques .questions ul li a h3,
+#contents .container .contact-ours .questions ul li a h3,
+#contents .container .self-service .products ul li a h3,
+#contents .container .pro-support .products ul li a h3,
+#contents .container .service-center .products ul li a h3,
+#contents .container .commom-ques .products ul li a h3,
+#contents .container .contact-ours .products ul li a h3,
+#contents .container .self-service .contact ul li a h3,
+#contents .container .pro-support .contact ul li a h3,
+#contents .container .service-center .contact ul li a h3,
+#contents .container .commom-ques .contact ul li a h3,
+#contents .container .contact-ours .contact ul li a h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  line-height: 46px;
+}
+#contents .container .self-service .questions ul li a span,
+#contents .container .pro-support .questions ul li a span,
+#contents .container .service-center .questions ul li a span,
+#contents .container .commom-ques .questions ul li a span,
+#contents .container .contact-ours .questions ul li a span,
+#contents .container .self-service .products ul li a span,
+#contents .container .pro-support .products ul li a span,
+#contents .container .service-center .products ul li a span,
+#contents .container .commom-ques .products ul li a span,
+#contents .container .contact-ours .products ul li a span,
+#contents .container .self-service .contact ul li a span,
+#contents .container .pro-support .contact ul li a span,
+#contents .container .service-center .contact ul li a span,
+#contents .container .commom-ques .contact ul li a span,
+#contents .container .contact-ours .contact ul li a span {
+  display: block;
+  font-size: 14px;
+  line-height: 14px;
+}
+#contents .container .self-service .questions ul li a:hover h3,
+#contents .container .pro-support .questions ul li a:hover h3,
+#contents .container .service-center .questions ul li a:hover h3,
+#contents .container .commom-ques .questions ul li a:hover h3,
+#contents .container .contact-ours .questions ul li a:hover h3,
+#contents .container .self-service .products ul li a:hover h3,
+#contents .container .pro-support .products ul li a:hover h3,
+#contents .container .service-center .products ul li a:hover h3,
+#contents .container .commom-ques .products ul li a:hover h3,
+#contents .container .contact-ours .products ul li a:hover h3,
+#contents .container .self-service .contact ul li a:hover h3,
+#contents .container .pro-support .contact ul li a:hover h3,
+#contents .container .service-center .contact ul li a:hover h3,
+#contents .container .commom-ques .contact ul li a:hover h3,
+#contents .container .contact-ours .contact ul li a:hover h3,
+#contents .container .self-service .questions ul li a:hover span,
+#contents .container .pro-support .questions ul li a:hover span,
+#contents .container .service-center .questions ul li a:hover span,
+#contents .container .commom-ques .questions ul li a:hover span,
+#contents .container .contact-ours .questions ul li a:hover span,
+#contents .container .self-service .products ul li a:hover span,
+#contents .container .pro-support .products ul li a:hover span,
+#contents .container .service-center .products ul li a:hover span,
+#contents .container .commom-ques .products ul li a:hover span,
+#contents .container .contact-ours .products ul li a:hover span,
+#contents .container .self-service .contact ul li a:hover span,
+#contents .container .pro-support .contact ul li a:hover span,
+#contents .container .service-center .contact ul li a:hover span,
+#contents .container .commom-ques .contact ul li a:hover span,
+#contents .container .contact-ours .contact ul li a:hover span {
+  color: #ff6700;
+}
+#contents .container .self-service .questions ul li:hover,
+#contents .container .pro-support .questions ul li:hover,
+#contents .container .service-center .questions ul li:hover,
+#contents .container .commom-ques .questions ul li:hover,
+#contents .container .contact-ours .questions ul li:hover,
+#contents .container .self-service .products ul li:hover,
+#contents .container .pro-support .products ul li:hover,
+#contents .container .service-center .products ul li:hover,
+#contents .container .commom-ques .products ul li:hover,
+#contents .container .contact-ours .products ul li:hover,
+#contents .container .self-service .contact ul li:hover,
+#contents .container .pro-support .contact ul li:hover,
+#contents .container .service-center .contact ul li:hover,
+#contents .container .commom-ques .contact ul li:hover,
+#contents .container .contact-ours .contact ul li:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 0 16px 2px #b9b9b9;
+}
+#contents .container .self-service .questions ul li:nth-child(2),
+#contents .container .pro-support .questions ul li:nth-child(2),
+#contents .container .service-center .questions ul li:nth-child(2),
+#contents .container .commom-ques .questions ul li:nth-child(2),
+#contents .container .contact-ours .questions ul li:nth-child(2),
+#contents .container .self-service .products ul li:nth-child(2),
+#contents .container .pro-support .products ul li:nth-child(2),
+#contents .container .service-center .products ul li:nth-child(2),
+#contents .container .commom-ques .products ul li:nth-child(2),
+#contents .container .contact-ours .products ul li:nth-child(2),
+#contents .container .self-service .contact ul li:nth-child(2),
+#contents .container .pro-support .contact ul li:nth-child(2),
+#contents .container .service-center .contact ul li:nth-child(2),
+#contents .container .commom-ques .contact ul li:nth-child(2),
+#contents .container .contact-ours .contact ul li:nth-child(2) {
+  background-image: url(../img/selfservice_icon_02.png);
+}
+#contents .container .self-service .questions ul li:nth-child(3),
+#contents .container .pro-support .questions ul li:nth-child(3),
+#contents .container .service-center .questions ul li:nth-child(3),
+#contents .container .commom-ques .questions ul li:nth-child(3),
+#contents .container .contact-ours .questions ul li:nth-child(3),
+#contents .container .self-service .products ul li:nth-child(3),
+#contents .container .pro-support .products ul li:nth-child(3),
+#contents .container .service-center .products ul li:nth-child(3),
+#contents .container .commom-ques .products ul li:nth-child(3),
+#contents .container .contact-ours .products ul li:nth-child(3),
+#contents .container .self-service .contact ul li:nth-child(3),
+#contents .container .pro-support .contact ul li:nth-child(3),
+#contents .container .service-center .contact ul li:nth-child(3),
+#contents .container .commom-ques .contact ul li:nth-child(3),
+#contents .container .contact-ours .contact ul li:nth-child(3) {
+  background-image: url(../img/selfservice_icon_03.png);
+}
+#contents .container .self-service .questions ul li:nth-child(4),
+#contents .container .pro-support .questions ul li:nth-child(4),
+#contents .container .service-center .questions ul li:nth-child(4),
+#contents .container .commom-ques .questions ul li:nth-child(4),
+#contents .container .contact-ours .questions ul li:nth-child(4),
+#contents .container .self-service .products ul li:nth-child(4),
+#contents .container .pro-support .products ul li:nth-child(4),
+#contents .container .service-center .products ul li:nth-child(4),
+#contents .container .commom-ques .products ul li:nth-child(4),
+#contents .container .contact-ours .products ul li:nth-child(4),
+#contents .container .self-service .contact ul li:nth-child(4),
+#contents .container .pro-support .contact ul li:nth-child(4),
+#contents .container .service-center .contact ul li:nth-child(4),
+#contents .container .commom-ques .contact ul li:nth-child(4),
+#contents .container .contact-ours .contact ul li:nth-child(4) {
+  margin: 0 0 18px 0;
+  background-image: url(../img/selfservice_icon_04.png);
+}
+#contents .container .self-service .questions ul li:nth-child(5),
+#contents .container .pro-support .questions ul li:nth-child(5),
+#contents .container .service-center .questions ul li:nth-child(5),
+#contents .container .commom-ques .questions ul li:nth-child(5),
+#contents .container .contact-ours .questions ul li:nth-child(5),
+#contents .container .self-service .products ul li:nth-child(5),
+#contents .container .pro-support .products ul li:nth-child(5),
+#contents .container .service-center .products ul li:nth-child(5),
+#contents .container .commom-ques .products ul li:nth-child(5),
+#contents .container .contact-ours .products ul li:nth-child(5),
+#contents .container .self-service .contact ul li:nth-child(5),
+#contents .container .pro-support .contact ul li:nth-child(5),
+#contents .container .service-center .contact ul li:nth-child(5),
+#contents .container .commom-ques .contact ul li:nth-child(5),
+#contents .container .contact-ours .contact ul li:nth-child(5) {
+  background-image: url(../img/selfservice_icon_05.png);
+}
+#contents .container .self-service .questions ul li:nth-child(6),
+#contents .container .pro-support .questions ul li:nth-child(6),
+#contents .container .service-center .questions ul li:nth-child(6),
+#contents .container .commom-ques .questions ul li:nth-child(6),
+#contents .container .contact-ours .questions ul li:nth-child(6),
+#contents .container .self-service .products ul li:nth-child(6),
+#contents .container .pro-support .products ul li:nth-child(6),
+#contents .container .service-center .products ul li:nth-child(6),
+#contents .container .commom-ques .products ul li:nth-child(6),
+#contents .container .contact-ours .products ul li:nth-child(6),
+#contents .container .self-service .contact ul li:nth-child(6),
+#contents .container .pro-support .contact ul li:nth-child(6),
+#contents .container .service-center .contact ul li:nth-child(6),
+#contents .container .commom-ques .contact ul li:nth-child(6),
+#contents .container .contact-ours .contact ul li:nth-child(6) {
+  background-image: url(../img/selfservice_icon_06.png);
+}
+#contents .container .self-service .questions ul li:nth-child(7),
+#contents .container .pro-support .questions ul li:nth-child(7),
+#contents .container .service-center .questions ul li:nth-child(7),
+#contents .container .commom-ques .questions ul li:nth-child(7),
+#contents .container .contact-ours .questions ul li:nth-child(7),
+#contents .container .self-service .products ul li:nth-child(7),
+#contents .container .pro-support .products ul li:nth-child(7),
+#contents .container .service-center .products ul li:nth-child(7),
+#contents .container .commom-ques .products ul li:nth-child(7),
+#contents .container .contact-ours .products ul li:nth-child(7),
+#contents .container .self-service .contact ul li:nth-child(7),
+#contents .container .pro-support .contact ul li:nth-child(7),
+#contents .container .service-center .contact ul li:nth-child(7),
+#contents .container .commom-ques .contact ul li:nth-child(7),
+#contents .container .contact-ours .contact ul li:nth-child(7) {
+  background-image: url(../img/selfservice_icon_07.png);
+}
+#contents .container .self-service .questions ul li:nth-child(8),
+#contents .container .pro-support .questions ul li:nth-child(8),
+#contents .container .service-center .questions ul li:nth-child(8),
+#contents .container .commom-ques .questions ul li:nth-child(8),
+#contents .container .contact-ours .questions ul li:nth-child(8),
+#contents .container .self-service .products ul li:nth-child(8),
+#contents .container .pro-support .products ul li:nth-child(8),
+#contents .container .service-center .products ul li:nth-child(8),
+#contents .container .commom-ques .products ul li:nth-child(8),
+#contents .container .contact-ours .products ul li:nth-child(8),
+#contents .container .self-service .contact ul li:nth-child(8),
+#contents .container .pro-support .contact ul li:nth-child(8),
+#contents .container .service-center .contact ul li:nth-child(8),
+#contents .container .commom-ques .contact ul li:nth-child(8),
+#contents .container .contact-ours .contact ul li:nth-child(8) {
+  margin: 0 0 18px 0;
+  background-image: url(../img/selfservice_icon_08.png);
+}
+#contents .container .pro-support .products ul li:nth-child(n) {
+  height: 287px;
+  background-image: none;
+}
+#contents .container .pro-support .products ul li:nth-child(n) a img {
+  margin: 45px 0 13px 0;
+}
+#contents .container .pro-support .products ul li:nth-child(n) a span {
+  font-size: 16px;
+  line-height: 28px;
+}
+#contents .container .service-center .center {
+  height: 300px;
+}
+#contents .container .service-center .center .left,
+#contents .container .service-center .center .right {
+  float: left;
+  width: 613px;
+  height: 100%;
+  overflow: hidden;
+}
+#contents .container .service-center .center .left img {
+  width: 100%;
+}
+#contents .container .service-center .center .right {
+  background-color: #fff;
+  text-align: center;
+  color: #000;
+}
+#contents .container .service-center .center .right p {
+  font-size: 20px;
+  margin: 64px auto 15px;
+}
+#contents .container .service-center .center .right span {
+  font-size: 16px;
+  opacity: 0.6;
+}
+#contents .container .service-center .center .right .icon {
+  width: 500px;
+  margin: 24px auto 10px;
+  opacity: 0.4;
+}
+#contents .container .service-center .center .right .icon dl {
+  float: left;
+  width: 20%;
+}
+#contents .container .service-center .center .right a {
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px auto;
+  width: 158px;
+  height: 38px;
+  line-height: 38px;
+  text-decoration: none;
+  transition: all 0.2s;
+  color: rgba(0, 0, 0, 0.4);
+}
+#contents .container .service-center .center .right a:hover {
+  color: #ff6700;
+}
+#contents .container .commom-ques .search {
+  position: relative;
+  width: 646px;
+  height: 50px;
+  margin: 0 auto 50px;
+  background-color: #fff;
+}
+#contents .container .commom-ques .search .search-content {
+  width: 567px;
+  height: 48px;
+  border: none;
+  padding: 0 52px 0 27px;
+  color: #000;
+}
+#contents .container .commom-ques .search .search-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 52px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  text-align: center;
+  transition: all 0.2s;
+}
+#contents .container .commom-ques .search .search-btn:hover {
+  color: #fff;
+  background: #ff6700;
+}
+#contents .container .commom-ques .search p {
+  font-size: 12px;
+  color: #ff6700;
+  margin-top: 10px;
+  display: none;
+}
+#contents .container .commom-ques .content {
+  background-color: #fff;
+}
+#contents .container .commom-ques .content .tab-list {
+  font-weight: 400;
+}
+#contents .container .commom-ques .content .tab-list li {
+  float: left;
+  width: 14.28571429%;
+  height: 66px;
+  font-size: 18px;
+  line-height: 66px;
+  color: #333;
+  text-align: center;
+  border-bottom: 1px solid #f5f5f5;
+}
+#contents .container .commom-ques .content .tab-list li.active {
+  color: #fff;
+  background-color: #ff6700;
+}
+#contents .container .commom-ques .content .tab-content .per {
+  padding: 30px 0 16px 0;
+  text-align: center;
+}
+#contents .container .commom-ques .content .tab-content .per ul > li {
+  float: left;
+  width: 44%;
+  margin-left: 6%;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: left;
+  /*list-style: disc;*/
+  color: #e2e2e2;
+}
+#contents .container .commom-ques .content .tab-content .per ul > li a {
+  display: inline-block;
+  width: 100%;
+  color: #000;
+  opacity: 0.87;
+  font-size: 16px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#contents .container .commom-ques .content .tab-content .per ul > li:hover {
+  color: #ff6700;
+}
+#contents .container .commom-ques .content .tab-content .per ul > li:hover a {
+  color: #ff6700;
+  text-decoration: none;
+}
+#contents .container .commom-ques .content .tab-content .per > a {
+  display: block;
+  color: #000;
+  opacity: 0.6;
+  font-size: 16px;
+}
+#contents .container .commom-ques .content .tab-content .per > a:hover {
+  text-decoration: none;
+  color: #ff6700;
+}
+#contents .container .contact-ours .contact ul {
+  width: 1246px;
+}
+#contents .container .contact-ours .contact ul li:nth-child(n) {
+  background-image: none;
+  margin: 0 14px 17px 0;
+  padding: 0;
+  height: 276px;
+}
+#contents .container .contact-ours .contact ul li:nth-child(n) a .content {
+  margin: 0;
+  padding-top: 116px;
+  text-align: center;
+}
+#contents .container .contact-ours .contact ul li:nth-child(n) a .content img,
+#contents .container .contact-ours .contact ul li:nth-child(n) a .content span {
+  display: inline-block;
+  margin: 0;
+}
+#contents .container .contact-ours .contact ul li:nth-child(n) a .content span {
+  font-size: 18px;
+  line-height: 18px;
+  margin-left: 20px;
+  color: #000;
+  opacity: 0.87;
+  position: relative;
+}
+#contents .container .contact-ours .contact ul li:nth-child(n) a .content span.two-line {
+  line-height: 24px;
+  top: 16px;
+}

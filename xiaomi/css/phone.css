@@ -1,0 +1,211 @@
+a {
+  text-decoration: none;
+  /* inherit �̳� */
+  color: inherit;
+  font: inherit;
+}
+/**/
+#main {
+  padding-bottom: 80px;
+  background-color: #f5f5f5;
+}
+#main .banner-box {
+  height: 620px;
+  overflow: hidden;
+}
+#main .banner-box .swiper-banner {
+  position: relative;
+  width: 2560px;
+  height: 620px;
+  left: 50%;
+  margin-left: -1280px;
+  overflow: hidden;
+  z-index: 1;
+}
+#main .banner-box .swiper-banner .banner {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+#main .banner-box .swiper-banner .banner a img {
+  height: 620px;
+}
+#main .banner-box .swiper-banner .banner-prev {
+  left: 2560px;
+  -webkit-animation: moveInt 2s 0s ease-in-out infinite;
+  animation: moveInt 2s 0s ease-in-out infinite;
+}
+#main .banner-box .swiper-banner .banner-active {
+  -webkit-animation: moveOut 2s 0s ease-in-out infinite;
+  animation: moveOut 2s 0s ease-in-out infinite;
+}
+#main .banner-box .swiper-banner:hover .banner-prev,
+#main .banner-box .swiper-banner:hover .banner-active {
+  animation-play-state: paused;
+}
+#main .title-box {
+  width: 1226px;
+  margin: 0 auto;
+}
+#main .title-box .title {
+  font-size: 24px;
+  line-height: 64px;
+  text-align: left;
+  font-weight: 400;
+  color: #333;
+}
+#main .phone-box1 {
+  width: 1226px;
+  height: 434px;
+  margin: 0 auto 14px;
+}
+#main .phone-box1 .products {
+  height: 100%;
+  position: relative;
+  background: #fff;
+  transition: all 0.3s;
+}
+#main .phone-box1 .products .box-left {
+  width: 854px;
+  height: 100%;
+}
+#main .phone-box1 .products .box-left img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#main .phone-box1 .products .box-right {
+  position: absolute;
+  left: 916px;
+  top: 94px;
+  width: 270px;
+  height: 340px;
+}
+#main .phone-box1 .products .box-right .title {
+  line-height: 32px;
+}
+#main .phone-box1 .products .box-right .title a {
+  font-size: 32px;
+  color: #424242;
+  text-decoration: none;
+}
+#main .phone-box1 .products .box-right .desc {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #707070;
+  line-height: 22px;
+  min-height: 44px;
+}
+#main .phone-box1 .products .box-right .price {
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 17px;
+  line-height: 45px;
+  color: #ff6700;
+}
+#main .phone-box1 .products .box-right .price strong {
+  font-size: 32px;
+  letter-spacing: -2px;
+}
+#main .phone-box1 .products .box-right .link {
+  position: absolute;
+  left: 0;
+  bottom: 62px;
+}
+#main .phone-box1 .products .box-right .link a {
+  text-decoration: none;
+}
+#main .phone-box1 .products:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 16px 2px #c6c6c6;
+}
+#main .phone-box2 {
+  width: 1226px;
+  height: 482px;
+  margin: 0 auto 14px;
+}
+#main .phone-box2 .right {
+  margin-left: 14px;
+}
+#main .phone-box2 .left,
+#main .phone-box2 .right {
+  float: left;
+  width: 606px;
+  height: 100%;
+}
+#main .phone-box2 .left .products,
+#main .phone-box2 .right .products {
+  height: 100%;
+  background: #fff;
+  transition: all 0.3s;
+}
+#main .phone-box2 .left .products .box-img,
+#main .phone-box2 .right .products .box-img {
+  width: 100%;
+  height: 358px;
+}
+#main .phone-box2 .left .products .box-img img,
+#main .phone-box2 .right .products .box-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#main .phone-box2 .left .products .box-text,
+#main .phone-box2 .right .products .box-text {
+  margin: 38px 0 0 48px;
+  position: relative;
+}
+#main .phone-box2 .left .products .box-text .title,
+#main .phone-box2 .right .products .box-text .title {
+  line-height: 26px;
+}
+#main .phone-box2 .left .products .box-text .title a,
+#main .phone-box2 .right .products .box-text .title a {
+  font-size: 24px;
+  color: #424242;
+  text-decoration: none;
+}
+#main .phone-box2 .left .products .box-text .desc,
+#main .phone-box2 .right .products .box-text .desc {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #707070;
+  line-height: 18px;
+  min-height: 44px;
+}
+#main .phone-box2 .left .products .box-text .price,
+#main .phone-box2 .right .products .box-text .price {
+  position: absolute;
+  right: 40px;
+  top: 0;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 45px;
+  color: #ff6700;
+}
+#main .phone-box2 .left .products .box-text .price strong,
+#main .phone-box2 .right .products .box-text .price strong {
+  font-size: 32px;
+  letter-spacing: -2px;
+}
+#main .phone-box2 .left .products:hover,
+#main .phone-box2 .right .products:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 16px 2px #c6c6c6;
+}
+@keyframes moveInt {
+  78% {
+    left: 2560px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes moveOut {
+  78% {
+    left: 0;
+  }
+  100% {
+    left: -2560px;
+  }
+}
